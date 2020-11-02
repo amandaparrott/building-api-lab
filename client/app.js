@@ -1,4 +1,4 @@
-// let chirpText = $('#chirpText').val();
+
 let chirpButton = $("#chirpButton");
 
 let deleteChirp = (id) => {
@@ -85,14 +85,13 @@ chirpButton.click(() => {
     text: chirpText,
   };
   $.post(`/api/chirps/`, chirp).then(() => {
-    // chirpDiv.epmty;
+   
     $("#timeline").empty;
     fetchChirps();
   });
 });
 
-// $('#chirpButton').click(createChirp());
+
 
 fetchChirps();
-// let deleteChirpButton = $("#deleteChirpButton");
-// deleteChirpButton.click(deleteChirp());
+
